@@ -1,6 +1,7 @@
 // import './App.css'
 import Cabecalho from './Cabecalho.jsx'
 import Banner from './Banner.jsx'
+import Depoimentos from './Depoimentos.jsx'
 
 function App() {
   return (
@@ -8,6 +9,8 @@ function App() {
       <Cabecalho/>
       <main>
         <Banner/>
+        <hr></hr>
+        <Depoimentos/>
       </main>
     </>
   )
