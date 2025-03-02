@@ -1,8 +1,8 @@
-function Container({ children }) {
+function Container({ children, cor }) {
     return (
         <>
-            <div className="flex justify-center">
-                <div className="bg-amber-400 container py-10">
+            <div className={`flex justify-center bg-${cor}`}>
+                <div className="container py-10">
                     { children }
                 </div>
             </div>
