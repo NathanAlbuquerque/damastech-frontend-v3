@@ -1,6 +1,6 @@
 import damastechLogo from './assets/logo.svg'
 
-function Cabecalho() {
+export default function Cabecalho() {
   return (
     <>
         <header className="py-6 px-15 w-full bg-white">
@@ -22,5 +22,3 @@ function Cabecalho() {
     </>
   )
 }
-
-export default Cabecalho

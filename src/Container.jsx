@@ -1,4 +1,4 @@
-function Container({ children, cor }) {
+export default function Container({ children, cor }) {
     return (
         <>
             <div className={`flex justify-center bg-${cor}`}>
@@ -9,5 +9,3 @@ function Container({ children, cor }) {
         </>
     )
 }
-
-export default Container

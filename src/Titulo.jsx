@@ -1,4 +1,4 @@
-function Titulo({ children, cor = "damastech" }) {
+export default function Titulo({ children, cor = "damastech" }) {
     return (
         <>
             <div className='flex justify-center'>
@@ -7,5 +7,3 @@ function Titulo({ children, cor = "damastech" }) {
         </>
     )
 }
-
-export default Titulo

@@ -3,19 +3,18 @@ import Cabecalho from './Cabecalho.jsx'
 import Banner from './Banner.jsx'
 import Depoimentos from './Depoimentos.jsx'
 import Servicos from './Servicos.jsx'
+import Jornada from './Jornada.jsx'
 
-function App() {
+export default function App() {
   return (
     <>
       <Cabecalho/>
       <main>
         <Banner/>
-        <hr></hr>
         <Depoimentos/>
         <Servicos/>
+        <Jornada/>
       </main>
     </>
   )
 }
-
-export default App

@@ -3,7 +3,7 @@ import Botao from './Botao.jsx'
 import Container from './Container.jsx'
 import EntrarIcone from './icones/EntrarIcone.jsx'
 
-function Depoimentos() {
+export default function Depoimentos() {
     const depoimentos = [
         {
             nome: "Nome da empresa",
@@ -38,5 +38,3 @@ function Depoimentos() {
         </>
     )
 }
-
-export default Depoimentos
