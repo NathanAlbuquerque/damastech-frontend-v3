@@ -6,6 +6,7 @@ import Servicos from './Servicos.jsx'
 import Jornada from './Jornada.jsx'
 import Cadastro from './Cadastro.jsx'
 import Novidades from './Novidades.jsx'
+import Rodape from './Rodape.jsx'
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Jornada/>
         <Cadastro/>
         <Novidades/>
+        <Rodape/>
       </main>
     </>
   )
