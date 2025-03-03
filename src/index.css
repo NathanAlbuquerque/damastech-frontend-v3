@@ -1,27 +1,31 @@
 @import "tailwindcss";
 
 @theme {
-  --color-damastech: #4A0676
+  --color-damastech: #4A0676; /* Cor damastech original */
+  --color-damastech-900: #6808a7; /* Cor 10% clareada */
+  --color-damastech-800: #870BD7; /* Cor 20% clareada */
+  --color-damastech-700: #a121f4; /* Cor 30% clareada */
+  --color-damastech-600: #b652f6; /* Cor 40% clareada */
+  --color-damastech-500: #ca82f9; /* Cor 50% clareada */
 }
 
-@font-face {
+/* @font-face {
   font-family: "Lexend Deca";
   src: url(../assets/fonts/LexendDeca-VariableFont_wght.ttf);
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: "Roboto";
   src: url(../assets/fonts/Roboto-VariableFont_wdth\,wght.ttf);
-}
+} */
 
-html {
+/* html {
   font-family: "Lexend Deca", serif;
-}
+} */
 
 body {
   margin: 0;
   width: 100vw;
-  background: #ccc
 }
 
 * {
