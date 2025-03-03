@@ -1,6 +1,6 @@
 # Projeto Frontend - Damas Tech
 
-![Logotipo do Damas Tech](https://github.com/user-attachments/assets/7d01dd3e-ef36-4b8d-9063-286a73c608ae)
+![Logotipo do Damas Tech](./public/damastech-seo.webp)
 
 O **Damas Tech** é uma iniciativa que promove a inclusão de mulheres no mercado de trabalho, oferecendo programas de treinamento e bootcamps em parceria com empresas. Este projeto inclui a criação de uma interface para gerenciar informações relacionadas aos programas, empresas parceiras e participantes, conectando mulheres a oportunidades profissionais.
 
