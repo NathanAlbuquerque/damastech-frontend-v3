@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Cabecalho from './Cabecalho.jsx'
 import Rodape from './Rodape.jsx'
+import Escolha from './Escolha.jsx';
 import Empresa from './Empresa.jsx'
 import Usuaria from './Usuaria.jsx'
 
@@ -11,6 +12,7 @@ export default function App() {
       <main>
         <BrowserRouter>
           <Routes>
+            <Route path="/" element={<Escolha/>}/>
             <Route path="/empresa" element={<Empresa/>}/>
             <Route path="/usuaria" element={<Usuaria/>}/>
           </Routes>
