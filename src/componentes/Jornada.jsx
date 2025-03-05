@@ -6,6 +6,7 @@ import EntrarIcone from '../icones/EntrarIcone.jsx'
 export default function Jornada({ passos }) {
     return (
         <>
+            <div id="conheca-nos"></div>
             <Container>
                 <Titulo>Crie sua jornada conosco</Titulo>
 

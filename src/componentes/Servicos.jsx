@@ -7,6 +7,7 @@ export default function Servicos({ servicos }) {
     
     return (
         <>
+            <div id="servicos"></div>
             <Container cor="damastech">
                 <Titulo cor="white">VEJA O QUE LHE ESPERA</Titulo>
                 <div className="flex px-20 gap-x-10 mt-15">

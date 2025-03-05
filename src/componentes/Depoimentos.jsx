@@ -20,6 +20,7 @@ export default function Depoimentos() {
     ]
     return (
         <>
+            <div id="depoimentos"></div>
             <Container>
                 <Titulo>Veja o que as empresas parceiras dizem sobre nossa solução</Titulo>
                 <div className="flex px-20 gap-x-10 mt-15">

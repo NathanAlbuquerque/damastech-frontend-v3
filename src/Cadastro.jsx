@@ -6,6 +6,7 @@ import damastechLogo from './assets/logo.svg'
 export default function Cadastro() {
     return (
         <>
+            <div id="cadastre-se"></div>
             <Container>
                 <Titulo>Crie sua jornada conosco</Titulo>
 
