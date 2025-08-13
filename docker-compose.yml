@@ -1,0 +1,28 @@
+services:
+  dev:
+    container_name: damastech-frontend-dev
+    build:
+      context: .
+      target: development # Esta e a seleção do stage do Dockerfile
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+      - ./tailwind.config.ts:/app/tailwind.config.ts
+      - ./postcss.config.js:/app/postcss.config.js
+      - ./next.config.mjs:/app/next.config.mjs
+      - ./tsconfig.json:/app/tsconfig.json
+      - ./components.json:/app/components.json
+    ports:
+      - "3000:3000"
+    enviroment:
+      - NODE_ENV=development
+
+  prod:
+    container_name: damastech-frontend-prod
+    build:
+      context: .
+      target: production
+    ports:
+      - "8000:3000"
+    enviroment:
+      - NODE_ENV=production
