@@ -5,16 +5,12 @@ services:
       context: .
       target: development # Esta e a seleção do stage do Dockerfile
     volumes:
-      - ./src:/app/src
-      - ./public:/app/public
-      - ./tailwind.config.ts:/app/tailwind.config.ts
-      - ./postcss.config.js:/app/postcss.config.js
-      - ./next.config.mjs:/app/next.config.mjs
-      - ./tsconfig.json:/app/tsconfig.json
-      - ./components.json:/app/components.json
+      - ./:/app
+      # Isola a node_modules para usar a de dentro do contêiner, e não a do host
+      - /app/node_modules
     ports:
       - "3000:3000"
-    enviroment:
+    environment:
       - NODE_ENV=development
 
   prod:
@@ -24,5 +20,5 @@ services:
       target: production
     ports:
       - "8000:3000"
-    enviroment:
+    environment:
       - NODE_ENV=production

@@ -3,8 +3,9 @@
 # Comando para criar o projeto Next.js pela primeira vez
 
 init:
-	@docker run --rm -v $(shell pwd):/app -w /app node:20-alpine npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias "@/*"
-	@echo "Projeto Next.js criado. Agora você pode rodar 'make deps' e depois 'make dev'."
+	@echo "Iniciando a criação INTERATIVA do projeto Next.js..."
+	@docker run -it --rm -v $(shell pwd):/app -w /app node:20-alpine sh -c "npx create-next-app@latest temp-app && mv temp-app/* temp-app/.[!.]* . && rm -rf temp-app"
+	@echo "Projeto Next.js criado. Como próximo passo rode 'make init-shadcn' para configurar a UI."
 
 # Comando para instalar/atualizar dependências (incluindo shadcn-ui)
 
@@ -15,13 +16,13 @@ deps:
 
 init-shadcn:
 	@echo "Inicializando shadcn-ui... Responda às perguntas no terminal."
-	@docker compose run --rm dev npx shadcn-ui@latest init
+	@docker compose run --rm dev npx shadcn@latest init
 
 # Comando para adicionar um novo componente do shadcn-ui
 
 add-ui:
 	@read -p "Qual componente do shadn-ui você quer adicionar? (ex: button): " component; \
-	docker compose run --rm dev npx shadcn-ui@latest add $$component
+	docker compose run --rm dev npx shadcn@latest add $$component
 
 # Comando para iniciar o ambiente de desenvolvimento
 
