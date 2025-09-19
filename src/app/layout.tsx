@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Reem_Kufi_Fun } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { Header } from "@/components/layout/Header";
 
-const fontSans = Inter({
+const fontSans = Reem_Kufi_Fun({
   subsets: ["latin"],
   variable: "--font-sans",
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -26,7 +28,10 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        {children}
+        <div className="relative flex min-h-screen flex-col">
+          <Header />
+          <main className="flex-1">{children}</main>
+        </div>
       </body>
     </html>
   );
