@@ -1,3 +1,4 @@
+import { FeaturesSection } from "@/components/sections/landing/FeaturesSection";
 import { HeroSection } from "@/components/sections/landing/HeroSection";
 import Image from "next/image";
 
@@ -5,6 +6,7 @@ export default function Home() {
   return (
     <>
       <HeroSection />
+      <FeaturesSection />
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
