@@ -5,7 +5,7 @@ import Link from "next/link";
 export function HeroSection() {
   return (
     <section
-      className="relative w-full overflow-hidden bg-[#7D068A] text-white py-4 px-8"
+      className="relative w-full overflow-hidden bg-[#8D0899] text-white py-4 px-8"
       style={{
         backgroundImage: `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('/assets/landing/hero-background-pattern.png')`,
         backgroundSize: "cover",
@@ -25,7 +25,7 @@ export function HeroSection() {
             <Button size="lg" asChild className="bg-[#C2149F] hover:bg-white/90 hover:text-[#8D0899]">
               <Link href="/jornada">Começar Minha Jornada</Link>
             </Button>
-            <Button size="lg" variant="outline" asChild className="border-white bg-[#8D0899] text-white hover:bg-white hover:text-[#7D068A]">
+            <Button size="lg" variant="outline" asChild className="border-white bg-[#8D0899] text-white hover:bg-white hover:text-[#8D0899]">
               <Link href="/saiba-mais">Saiba Mais</Link>
             </Button>
           </div>
