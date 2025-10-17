@@ -75,7 +75,7 @@ export function TestimonialsSection() {
                           </div>
                         </div>
                         <blockquote className="mt-4 border-l-2 pl-4 italic text-muted-foreground">
-                          "{testimonial.quote}"
+                          &quot;{testimonial.quote}&quot;
                         </blockquote>
                       </div>
                     </CarouselItem>
