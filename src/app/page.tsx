@@ -1,6 +1,7 @@
 import { FeaturesSection } from "@/components/sections/landing/FeaturesSection";
 import { HeroSection } from "@/components/sections/landing/HeroSection";
 import { JourneySection } from "@/components/sections/landing/JourneySection";
+import { TracksSection } from "@/components/sections/landing/TracksSection";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <HeroSection />
       <FeaturesSection />
       <JourneySection />
+      <TracksSection />
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
