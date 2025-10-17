@@ -60,7 +60,7 @@ export function FeaturesSection() {
         <div className="mx-auto grid max-w-5xl items-center gap-12 py-12 lg:grid-cols-2 lg:gap-16">
           <div className="flex justify-center">
             <Image
-              src="/assets/landing/features-main.png"
+              src="/assets/landing/features-main-image.png"
               alt="Mulher refletindo sobre carreira em tecnologia, com ícones de HTML, CSS e JS ao redor"
               width={400}
               height={400}
