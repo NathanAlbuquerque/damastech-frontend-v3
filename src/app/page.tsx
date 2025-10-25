@@ -3,6 +3,7 @@ import { FaqSection } from "@/components/sections/landing/FaqSection";
 import { FeaturesSection } from "@/components/sections/landing/FeaturesSection";
 import { HeroSection } from "@/components/sections/landing/HeroSection";
 import { JourneySection } from "@/components/sections/landing/JourneySection";
+import { NewsletterSection } from "@/components/sections/landing/NewsletterSection";
 import { TestimonialsSection } from "@/components/sections/landing/TestimonialsSection";
 import { TracksSection } from "@/components/sections/landing/TracksSection";
 import Image from "next/image";
@@ -17,6 +18,7 @@ export default function Home() {
       <TestimonialsSection />
       <CtaSection />
       <FaqSection />
+      <NewsletterSection />
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
