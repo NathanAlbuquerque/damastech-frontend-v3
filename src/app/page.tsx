@@ -1,4 +1,5 @@
 import { CtaSection } from "@/components/sections/landing/CtaSection";
+import { FaqSection } from "@/components/sections/landing/FaqSection";
 import { FeaturesSection } from "@/components/sections/landing/FeaturesSection";
 import { HeroSection } from "@/components/sections/landing/HeroSection";
 import { JourneySection } from "@/components/sections/landing/JourneySection";
@@ -15,6 +16,7 @@ export default function Home() {
       <TracksSection />
       <TestimonialsSection />
       <CtaSection />
+      <FaqSection />
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
