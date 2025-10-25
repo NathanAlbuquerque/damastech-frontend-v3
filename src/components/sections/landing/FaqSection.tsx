@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import { Headset, HelpCircle } from "lucide-react";
 import Link from "next/link";
 
-// 1. DADOS CENTRALIZADOS (Fácil de atualizar)
 const faqData = [
   {
     id: "item-1",
@@ -40,12 +39,11 @@ export function FaqSection() {
   return (
     <section className="w-full bg-white py-12 md:py-24 lg:py-32 px-8">
       <div className="container grid grid-cols-1 items-start gap-12 md:gap-16 lg:grid-cols-2">
-        {/* Coluna da Esquerda: Título e CTA */}
+
         <div className="flex flex-col gap-6">
           <h2 className="text-4xl font-bold tracking-tighter sm:text-5xl lg:text-6xl">
             Perguntas
             <br />
-            {/* Cor customizada para "Frequentes" */}
             <span className="text-[#BC15D0]">Frequentes</span>
           </h2>
           <p className="max-w-md text-lg text-muted-foreground">
@@ -64,12 +62,11 @@ export function FaqSection() {
           </Button>
         </div>
 
-        {/* Coluna da Direita: Accordion */}
         <div className="w-full">
           <Accordion
             type="single"
             collapsible
-            defaultValue="item-1" // 2. DEIXA O PRIMEIRO ITEM ABERTO
+            defaultValue="item-1"
             className="w-full"
           >
             {faqData.map((item) => (

@@ -5,7 +5,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 
-// Importando todos os componentes de UI necessários
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -19,7 +18,6 @@ import {
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 
-// 1. DEFINIÇÃO DO ESQUEMA DE VALIDAÇÃO (Nível Doutor)
 // Usamos o Zod para definir a "forma" dos nossos dados e suas regras.
 const formSchema = z
   .object({
@@ -41,12 +39,10 @@ const formSchema = z
   .refine((data) => data.password === data.confirmPassword, {
     // Validação de "refinamento" para checar se as senhas coincidem
     message: "As senhas não coincidem.",
-    path: ["confirmPassword"], // Onde o erro deve aparecer
+    path: ["confirmPassword"],
   });
 
-// COMPONENTE PRINCIPAL
 export function CtaSection() {
-  // 2. INICIALIZAÇÃO DO FORMULÁRIO
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -59,17 +55,15 @@ export function CtaSection() {
     },
   });
 
-  // 3. FUNÇÃO DE SUBMISSÃO
   function onSubmit(values: z.infer<typeof formSchema>) {
-    // Aqui você enviará os dados para a sua API de backend
     console.log("Dados do formulário válidos:", values);
-    // Ex: await api.post('/register', values);
+    // await api.post('/register', values);
   }
 
   return (
     <section className="w-full bg-[#7A1F7F] py-12 md:py-24 lg:py-32 px-8">
       <div className="container grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-        {/* Coluna da Esquerda: Textos */}
+
         <div className="flex flex-col items-center lg:items-baseline gap-6 text-center lg:text-left">
           <h2 className="text-4xl font-bold tracking-tighter text-white sm:text-5xl lg:text-6xl">
             Dê o primeiro passo para <span className="text-[#FEB2E1]">sua nova carreira!</span>
@@ -80,7 +74,6 @@ export function CtaSection() {
           </p>
         </div>
 
-        {/* Coluna da Direita: Formulário */}
         <div className="w-full max-w-md justify-self-center rounded-2xl bg-gradient-to-b from-[#740676] to-[#93399B] p-8 shadow-2xl">
           <h3 className="text-2xl font-bold text-white">Comece agora</h3>
           <p className="mt-2 text-sm text-purple-200">
@@ -88,7 +81,6 @@ export function CtaSection() {
             potencial.
           </p>
 
-          {/* 4. RENDERIZAÇÃO DO FORMULÁRIO */}
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="mt-6 space-y-4">
               {/* Campo Nome */}
@@ -144,7 +136,6 @@ export function CtaSection() {
                 )}
               />
 
-              {/* Checkboxes */}
               <div className="text-xs text-purple-200">
                 Seus dados nos ajudam a criar uma comunidade segura e a
                 conectar você com oportunidades reais.{" "}
@@ -196,7 +187,6 @@ export function CtaSection() {
                 )}
               />
               
-              {/* Botão de Submissão */}
               <Button type="submit" size="lg" className="w-full bg-[#c026d3] text-white hover:bg-[#c026d3]/90">
                 Quero fazer parte!
               </Button>

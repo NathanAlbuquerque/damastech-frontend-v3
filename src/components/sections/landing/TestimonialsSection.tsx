@@ -90,7 +90,6 @@ export function TestimonialsSection() {
             </div>
           </div>
 
-          {/* Coluna da Direita: Imagem Principal */}
           <div className="hidden lg:flex justify-center">
             <Image
               src="/assets/landing/testimonials-main-image.png"
